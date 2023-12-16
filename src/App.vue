@@ -1,5 +1,5 @@
 <template>
-  <div id="capstone-app">
+  <div class="bg-blue-900" id="capstone-app">
     <div id="nav">
       <router-link v-bind:to="{ name: 'home' }">Home</router-link>&nbsp;|&nbsp;
       <router-link
@@ -11,3 +11,7 @@
     <router-view />
   </div>
 </template>
+
+<script>
+import "./assets/tailwind.css";
+</script>
