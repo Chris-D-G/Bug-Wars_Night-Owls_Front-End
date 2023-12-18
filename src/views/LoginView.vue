@@ -1,7 +1,12 @@
 <template>
-  <div id="login">
-    <form v-on:submit.prevent="login">
-      <h1>Please Sign In</h1>
+  <div class="bg-red-900" id="login">
+    <form
+      class="flex flex-grow flex-col items-center"
+      v-on:submit.prevent="login"
+    >
+      <h1 class="text-white text-lg font-large py-2 ml-2 text-center">
+        Please Sign In
+      </h1>
       <div role="alert" v-if="invalidCredentials">
         Invalid username and password!
       </div>
@@ -9,25 +14,52 @@
         Thank you for registering, please sign in.
       </div>
       <div class="form-input-group">
-        <label for="username">Username</label>
+        <label
+          class="ml-2 block mb-2 text-md font-medium text-white"
+          for="username"
+          >Username</label
+        >
         <input
+          class="ml-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit p-2.5"
+          placeholder="Username"
           type="text"
           id="username"
+          autocomplete="off"
           v-model="user.username"
           required
           autofocus
         />
       </div>
       <div class="form-input-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" v-model="user.password" required />
-      </div>
-      <button type="submit">Sign in</button>
-      <p>
-        <router-link v-bind:to="{ name: 'register' }"
-          >Need an account? Sign up.</router-link
+        <label
+          class="ml-2 block mb-2 text-md font-medium text-white"
+          for="password"
+          >Password</label
         >
-      </p>
+        <input
+          class="ml-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit p-2.5"
+          placeholder="•••••••••"
+          type="password"
+          id="password"
+          autocomplete="off"
+          v-model="user.password"
+          required
+        />
+      </div>
+      <div class="flex p-2">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          type="submit"
+        >
+          Sign in
+        </button>
+
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-3 rounded"
+        >
+          <router-link v-bind:to="{ name: 'register' }"> Register</router-link>
+        </button>
+      </div>
     </form>
   </div>
 </template>

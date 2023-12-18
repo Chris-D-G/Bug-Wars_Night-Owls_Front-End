@@ -1,8 +1,13 @@
 <template>
-  <div class="bg-blue-900" id="capstone-app">
+  <div class="bg-gray-500 h-screen" id="capstone-app">
     <div id="nav">
-      <router-link v-bind:to="{ name: 'home' }">Home</router-link>&nbsp;|&nbsp;
       <router-link
+        class="text-white font-bold py-2 px-4 ml-3 rounded"
+        v-bind:to="{ name: 'home' }"
+        >Home</router-link
+      >&nbsp;|&nbsp;
+      <router-link
+        class="text-white font-bold py-2 px-4 ml-3 rounded"
         v-bind:to="{ name: 'logout' }"
         v-if="$store.state.token != ''"
         >Logout</router-link
