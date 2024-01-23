@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gray-50 dark:bg-gray-900">
+  <section>
     <div
       class="flex flex-row items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
       id="register"
@@ -85,7 +85,7 @@
         </div>
       </div>
       <div class="">
-        <img src="/skeleton-animation_10.png" alt="" />
+        <img src="/src/images/skeleton-animation_10.png" alt="bug-icon" />
       </div>
     </div>
   </section>

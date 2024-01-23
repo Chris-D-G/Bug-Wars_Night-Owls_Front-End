@@ -4,6 +4,7 @@ import { createStore } from "./store";
 import router from "./router";
 import axios from "axios";
 import "./assets/tailwind.css";
+import "./assets/sass/style.scss";
 
 /* sets the base url for server API communication with axios */
 axios.defaults.baseURL = import.meta.env.VITE_REMOTE_API;

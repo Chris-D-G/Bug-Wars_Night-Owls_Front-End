@@ -48,6 +48,38 @@ const routes = [
       requiresAuth: false,
     },
   },
+  // {
+  //   path: "/howToPlay",
+  //   name: "how-to-play",
+  //   component: HowToPlayView,
+  //   meta: {
+  //     requiresAuth: false,
+  //   },
+  // },
+  // {
+  //   path: "/bugs",
+  //   name: "bugs",
+  //   component: BugsView,
+  //   meta: {
+  //     requiresAuth: false,
+  //   },
+  // },
+  // {
+  //   path: "/contributors",
+  //   name: "contributors",
+  //   component: ContributorsView,
+  //   meta: {
+  //     requiresAuth: false,
+  //   },
+  // },
+  // {
+  //   path: "/maps",
+  //   name: "maps",
+  //   component: MapsView,
+  //   meta: {
+  //     requiresAuth: false,
+  //   },
+  // },
 ];
 
 // Create the router

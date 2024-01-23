@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         primary: {
+          "md-blue": "#4056A1",
           50: "#eff6ff",
           100: "#dbeafe",
           200: "#bfdbfe",
