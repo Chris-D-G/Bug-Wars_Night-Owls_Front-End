@@ -5,7 +5,7 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/Bug-Wars_Night-Owls_Front-End",
+  // base: "/Bug-Wars_Night-Owls_Front-End",
   plugins: [vue()],
   resolve: {
     alias: {
