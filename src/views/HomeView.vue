@@ -28,8 +28,7 @@ p {
   font-family: "Orbitron", sans-serif;
 }
 body {
-  /* background-image: url("src/images/background_img.jpg"); */
-  background-image: url("https://img.freepik.com/free-vector/blank-meadow-landscape-scene_1308-59927.jpg?w=1380&t=st=1706046728~exp=1706047328~hmac=80d2f2ee85cf717fa1b7a04f096fb35ae6b6809efbaa837f9f66ba0d7751e93a");
+  background-image: url("/dist/assets/background_img-X17B5KOk.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
