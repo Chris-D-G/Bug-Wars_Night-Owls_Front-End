@@ -3,11 +3,11 @@
     <div class="flex justify-between">
       <div class="title flex justify-start">Bug Wars</div>
       <div class="flex justify-end content-center" id="nav">
-        <button class="btns">
+        <button class="btns btn-font" v-bind:to="{ name: 'home' }">
           <router-link v-bind:to="{ name: 'home' }">Home</router-link>
         </button>
 
-        <button class="btns">
+        <button class="btns btn-font">
           <router-link
             v-bind:to="{ name: 'login' }"
             v-if="$store.state.token == ''"
@@ -15,19 +15,18 @@
           >
         </button>
 
-        <button>
+        <button class="btns btn-font" v-if="$store.state.token != ''">
           <router-link
-            class="btns"
             v-bind:to="{ name: 'logout' }"
             v-if="$store.state.token != ''"
             >Logout</router-link
           >
         </button>
 
-        <button class="btns">How to Play</button>
-        <button class="btns">Bugs</button>
-        <button class="btns">Maps</button>
-        <button class="btns">Contributors</button>
+        <button class="btns btn-font">How to Play</button>
+        <button class="btns btn-font">Bugs</button>
+        <button class="btns btn-font">Maps</button>
+        <button class="btns btn-font">Contributors</button>
       </div>
     </div>
     <router-view />

@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <div>
-      <p class="text-center text-2xl">
+      <p class="text-center text-2xl font-bold">
         Please wait... the <a class="underline decoration-sky-500">bugs</a> have
         taken over and our website isn't done yet
       </p>
     </div>
-    <div class="flex flex-col items-center content-center">
+    <div class="flex flex-col items-center">
       <button
         class="text-8xl text-red-600 font-bold font-outline-2 custom-font"
       >
