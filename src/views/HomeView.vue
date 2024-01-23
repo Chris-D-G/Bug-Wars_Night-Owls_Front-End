@@ -29,6 +29,7 @@ p {
 }
 body {
   background-image: url("/dist/assets/background_img-X17B5KOk.jpg");
+  background-image: url("../src/images/background_img.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
