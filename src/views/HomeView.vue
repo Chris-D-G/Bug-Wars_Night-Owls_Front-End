@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import backgroundImage from "@/images/background_img.jpg";
 export default {};
 </script>
 <style>
@@ -28,8 +29,9 @@ p {
   font-family: "Orbitron", sans-serif;
 }
 body {
-  background-image: url("/dist/assets/background_img-X17B5KOk.jpg");
-  background-image: url("./src/images/background_img.jpg");
+  /* background-image: url("/dist/assets/background_img-X17B5KOk.jpg"); */
+  background-image: url("../images/background_img.jpg");
+  background-color: darkgray;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
